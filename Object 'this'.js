@@ -11,6 +11,9 @@ var appl = {
     update('Shmerel');
   }
 }
-
+var arrayTest = [1,4,'Green', true, {banana: 'yelloew'},[1,2,3]]
 appl.info()
 console.log(appl)
+for(var part in appl){
+  console.log(part,':  ', appl[part]);
+}
