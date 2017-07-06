@@ -10,6 +10,7 @@ var obj = {
         How about you?`);
     }
 }
+var nisht = null;
 console.log(typeof obj)
 console.log(typeof obj.mood)
 console.log(typeof obj.fun)
@@ -23,3 +24,5 @@ var str = 'I am a string!'
 console.log(typeof str)
 var bool = true;
 console.log(typeof bool)
+// returns object-strange bug
+console.log(typeof nisht)
