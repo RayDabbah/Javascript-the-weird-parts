@@ -18,11 +18,19 @@ shmerel.name = 'Shmerel Belkins';
 Object.prototype.fun = function(){
 	this.addition = 'I added something to your Object!!';
 }
+var family = {
+	wifeName: 'Chantschy',
+	son1: 'Mendel',
+	daughter1: 'Genendel',
+	son2: 'Beinish',
+	daughter2: 'Krassy',
+}
 shmerel.fun();
 yankel.fun();
-
-console.log(proto);
+var yankelsFamily = {};
+Object.assign(yankelsFamily, yankel, family);
 console.log(yankel);
+console.log(yankelsFamily);
 console.log('This is shmerel.prototype')
 console.log(shmerel.prototype);
 console.log('This is shmerel.__proto__')
