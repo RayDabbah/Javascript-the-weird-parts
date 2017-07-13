@@ -5,6 +5,13 @@ var proto = {
 	age: 'Please add your age',
 	hairColor: 'Please state your hair color',
 	favFood: 'Please tell us your favorite food',
+	zs: function(){
+		if(this.name .indexOf('s')=== -1 ){
+			 console.log("You don't have an 's' in your name!");
+		}else{
+			 console.log("You have an 's' in your name!");
+		}
+	}
 }
 
 // using Object.create to make a new object based on the previous function.
@@ -12,9 +19,9 @@ var yankel = Object.create(proto);
 yankel.name = 'Yankel';
 yankel.age = 49;
 yankel.favFood = 'Gala mit herring';
+yankel.zs();
 var shmerel = {};
 shmerel.name = 'Shmerel Belkins';
-
 Object.prototype.fun = function(){
 	this.addition = 'I added something to your Object!!';
 }
